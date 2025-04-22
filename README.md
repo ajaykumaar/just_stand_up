@@ -28,7 +28,7 @@ Exponential (sharp and pointy) functions accelerated learning compared to linear
 <img src="https://github.com/user-attachments/assets/04d53f1e-cc06-46af-8df8-7ea4f20970c6" width="360"/>
 
 
-
+Also, I felt incorporating a reward/penalty for the waving part of the hand motion to the existing reward signal might be a little too restrictive and may not be very different from applying a sine wave to the elbow joint after reaching the goal height. Hence, I have added the logic to apply a sine wave to perform the wave motion after the trained agent has lifted the right palm to the target position. 
 
 ## How you’d scale it up
 
