@@ -12,7 +12,8 @@ The goal of this task is
 ## What worked / didn’t
 #### The setup
 The dm_control + Mujoco combination by default doesn't leverage GPU for simulation, and running a few training steps on the CPU took a lot of time. So, I switched to Maniskill, which uses Sapien backend for GPU simulation. Also, the classic dm_control's humanoid environment was glitchy in Maniskill--- the robot sank below the floor or was floating. Fortunately, Maniskill comes with Unitree's humanoid H1's simulation with better physics. 
-<img src="https://github.com/user-attachments/assets/bf24054c-3bdc-4cb3-8d66-d083937a977f" width="600"/>
+
+<img src="https://github.com/user-attachments/assets/bf24054c-3bdc-4cb3-8d66-d083937a977f" width="360"/>
 
 Since the simulation runs on the GPU, it was possible to run the training with multiple parallel simulations. Initially, I tried recreating the dm_control/gym's reward function for the humanoid standup task. However, despite training for hours, the result was sub-optimal and the best the robot did was sitting upright. So, I've used a robot with a stationary base and controllable torso and limbs. 
 
