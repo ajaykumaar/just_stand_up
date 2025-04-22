@@ -25,7 +25,7 @@ I have used two wrappers- an Observation wrapper and a Rewards wrapper. The defa
 
 Exponential (sharp and pointy) functions accelerated learning compared to linear reward signals. Hence, the below reward signals have been used. In the below image, Red line represents the height reward, the Green line represents the actuation penalty and the orange line represents torso orientation penalty.
 
-![image](https://github.com/user-attachments/assets/04d53f1e-cc06-46af-8df8-7ea4f20970c6)
+<img src="https://github.com/user-attachments/assets/04d53f1e-cc06-46af-8df8-7ea4f20970c6" width="360"/>
 
 
 
