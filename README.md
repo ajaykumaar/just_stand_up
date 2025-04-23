@@ -1,4 +1,5 @@
-# Humanoid Wave RL Report 
+# Humanoid Wave RL Report [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10XgLbq-KwRSSQNMlcbPUsDhMK07FGXst?usp=sharing)
+
 
 ## What you tried
 1) Load a humanoid robot simulation
