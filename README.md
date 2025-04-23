@@ -33,6 +33,10 @@ The orange curve reflects the torso orientation penalty.
 
 I initially considered incorporating a wave-motion reward (penalizing or rewarding the elbow oscillation directly), but it felt too restrictive. Instead, once the agent lifts the palm to the target height, I apply a sine wave signal to the elbow joint to generate a waving gesture.
 
+Average returns plot:
+
+<img src="https://github.com/user-attachments/assets/0bb66654-64a0-4308-bca5-5a41d994caca" width="360"/>
+
 ## How you’d scale it up
 1) As a next step, I would modify the default reward function in dm_control to address the current sub-optimal results. The goal is to encourage the humanoid to stand up and seamlessly incorporate the hand wave motion.
 2) Hand gestures can vary significantly across individuals. To produce more natural, human-like waving behavior, it would be more effective to use imitation learning or learning from human demonstrations rather than relying solely on hand-crafted, environment-specific reward signals.
